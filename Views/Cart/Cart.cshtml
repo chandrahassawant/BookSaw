@@ -1,0 +1,239 @@
+@model IEnumerable<BulkyWeb.Models.Cart>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css"
+        integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="~/css/cart.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8">
+                @foreach (var item in Model)
+                {
+                    <div class="card border shadow-none mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start border-bottom pb-3">
+                                <div class="me-4">
+                                    <img src="@item.Product.ImageUrl" alt="Product Image" class="avatar-lg rounded">
+                                </div>
+                                <div class="flex-grow-1 align-self-center overflow-hidden">
+                                    <div>
+                                        <h5 class="text-truncate font-size-18">
+                                            <a href="#" class="text-dark">@item.Product.Title</a>
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            <i class="bx bxs-star text-warning"></i>
+                                            <i class="bx bxs-star text-warning"></i>
+                                            <i class="bx bxs-star text-warning"></i>
+                                        </p>
+                                        <p class="mb-0 mt-1">Color: <span class="fw-medium">Blue</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-0 ms-2">
+                                    <ul class="list-inline mb-0 font-size-16">
+                                        <li class="list-inline-item">
+                                            <form asp-controller="Cart" asp-action="RemoveFromCart" method="post">
+                                                <input type="hidden" name="cartId" value="@item.CartId" />
+                                                <button type="submit" class="text-muted px-1 border-0 bg-transparent">
+                                                    <i class="mdi mdi-trash-can-outline"></i>
+                                                </button>
+                                            </form>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <button type="button" class="text-muted px-1 border-0 bg-transparent">
+                                                <i class="mdi mdi-heart-outline"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mt-3">
+                                        <p class="text-muted mb-2">Price</p>
+                                        <h5 class="mb-0 mt-2">
+                                            <span class="text-muted me-2"><del
+                                                    class="font-size-16 fw-normal">$@item.Product.ListPrice</del></span>
+                                            $@item.Product.Price
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="mt-3">
+                                        <p class="text-muted mb-2">Quantity</p>
+                                        <input type="number" id="quantity_@item.CartId" name="quantity"
+                                            class="form-control text-center" value="@item.Quantity" min="1" max="10"
+                                            style="width: 150px; height: 35px;" onchange="this.form.submit()">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3">
+                                    <div class="mt-3">
+                                        <p class="text-muted mb-2">Total</p>
+                                        <h5>$@(item.Quantity * item.Product.Price)</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <!-- end card -->
+
+               <div class="row my-4">
+    <div class="col-sm-6">
+        <a asp-area="" asp-controller="Product" asp-action="Index" class="btn btn-link text-muted">
+            <i class="mdi mdi-arrow-left me-1"></i> Continue Shopping
+        </a>
+    </div>
+    <div class="col-sm-6">
+        <div class="text-sm-end mt-2 mt-sm-0">
+            <a asp-area="" asp-controller="OrderHeader" asp-action="CreateCheckOut" class="btn btn-success">
+                <i class="mdi mdi-cart-outline me-1"></i> Checkout
+            </a>
+        </div>
+    </div>
+</div>
+
+            </div>
+
+            <div class="col-xl-4">
+                <div class="mt-5 mt-lg-0">
+                    <div class="card border shadow-none">
+                        <div class="card-header bg-transparent border-bottom py-3 px-4">
+                            <h5 class="font-size-16 mb-0">Order Summary <span class="float-end">#MN0124</span></h5>
+                        </div>
+                        <div class="card-body p-4 pt-2">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>Sub Total:</td>
+                                            <td class="text-end">$@Model.Sum(item => item.Quantity * item.Product.Price)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Discount:</td>
+                                            <td class="text-end">- $0</td> <!-- Adjust if you have discount logic -->
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping Charge:</td>
+                                            <td class="text-end">$25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Estimated Tax:</td>
+                                            <td class="text-end">$18.20</td> <!-- Adjust if you have tax logic -->
+                                        </tr>
+                                        <tr class="bg-light">
+                                            <th>Total:</th>
+                                            <td class="text-end">
+                                                <span class="fw-bold">$@(Model.Sum(item => item.Quantity *
+                                                    item.Product.Price) + 25 + 18.20)</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- end table-responsive -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    <script>
+        function updateQuantity(action, cartId) {
+            var quantityInput = document.getElementById('quantity_' + cartId);
+            var quantity = parseInt(quantityInput.value);
+
+            if (action === 'increase' && quantity < 10) {
+                quantity++;
+            } else if (action === 'decrease' && quantity > 1) {
+                quantity--;
+            }
+
+            quantityInput.value = quantity;
+            quantityInput.form.submit();
+        }
+    </script>
+</body>
+
+</html>
+<style>
+    body {
+        margin-top: 20px;
+        background-color: #f1f3f7;
+    }
+
+    {
+    margin-top: 20px;
+    background-color: #f1f3f7;
+    padding-bottom: 100px; /* Add padding to prevent overlap */
+    }
+
+
+    .avatar-lg {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .font-size-18 {
+        font-size: 18px !important;
+    }
+
+    .text-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .w-xl {
+        min-width: 160px;
+    }
+
+    .card {
+        margin-bottom: 24px;
+        -webkit-box-shadow: 0 2px 3px #e4e8f0;
+        box-shadow: 0 2px 3px #e4e8f0;
+    }
+
+    .card {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid #eff0f2;
+        border-radius: 1rem;
+    }
+
+    input[type="number"] {
+        text-align: center;
+        margin: 0 auto;
+    }
+</style>

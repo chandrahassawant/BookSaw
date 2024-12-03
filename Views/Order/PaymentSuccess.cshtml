@@ -1,0 +1,31 @@
+@model OrderEntity
+
+<html>
+<head>
+    <title>Display Order and Transaction</title>
+   
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            Order and Transaction Details
+        </div>
+        <div class="card-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Transaction ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayFor(model => model.OrderId)</td>
+                        <td>@Html.DisplayFor(model => model.TransactionId)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

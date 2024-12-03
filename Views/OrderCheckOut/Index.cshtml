@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .address-card {
+            transition: width 0.5s;
+            cursor: pointer;
+            max-width: 85%;
+            max-height: 85%;
+        }
+
+        .modal-dialog {
+            max-width: 50%;
+            max-height: 50%;
+        }
+
+        .selected-address-card {
+            border: 2px solid #ff0000;
+            padding: 15px;
+            margin-top: 15px;
+            background-color: #d1e7dd;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn btn-secondary" style="margin-top: 90px; margin-left: 35px;" data-toggle="modal"
+        data-target="#dataModal">
+        Show Customer Addresses
+    </button>
+
+    <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Customer Address Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalData" class="container">
+                        <div class="row">
+                            @if (Model == null || Model.Count == 0)
+                            {
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary" id="addAddressButton" data-url="@Url.Action("Create", "CustomerAddress")">
+                                        Add Shipping Address
+                                    </button>
+                                </div>
+                            }
+                            else
+                            {
+                                @foreach (var item in Model)
+                                {
+                                    <div class="col-xl-8">
+                                        <div class="card address-card border shadow-none mb-4" data-id="@item.Id">
+                                            <div class="card-body">
+                                                <p>Name: @item.Name</p>
+                                                <p>Street Address: @item.StreetAddress</p>
+                                                <p>City: @item.City</p>
+                                                <p>State: @item.State</p>
+                                                <p>Postal Code: @item.PostalCode</p>
+                                                <p>Country: @item.Country</p>
+                                                <p>Phone Number: @item.PhoneNumber</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="selectAddress">Select Address</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="selectedAddress" class="container mt-1"
+        style="color: aquamarine; line-height: 1.2; padding: 0; margin: 0;">
+    </div>
+
+    <button type="button" class="btn btn-success" id="proceedToPayment" style="display: none; margin-left: 1.7%;"
+        data-url="@Url.Action("SubmitAddress", "OrderCheckOut")">
+        Proceed to Payment
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var selectedAddressId = null;
+
+            $('.address-card').click(function () {
+                $('.address-card').removeClass('selected-address-card');
+                $(this).addClass('selected-address-card');
+                selectedAddressId = $(this).data('id'); // Store the selected address ID
+            });
+
+            $('#selectAddress').click(function () {
+                if (selectedAddressId) {
+                    var selectedCard = $('.address-card.selected-address-card').clone();
+                    selectedCard.removeClass('selected-address-card');
+                    $('#selectedAddress').html(selectedCard);
+                    $('#proceedToPayment').show();
+                    $('#dataModal').modal('hide');
+                } else {
+                    alert('Please select an address.');
+                }
+            });
+
+            $('#addAddressButton').click(function () {
+                var url = $(this).data('url');
+                window.location.href = url; // Redirect to the Create Address page
+            });
+
+            $('#proceedToPayment').click(function () {
+                if (!selectedAddressId) {
+                    alert('No address selected.');
+                    return;
+                }
+
+                var url = $(this).data('url');
+                $.post(url, { addressId: selectedAddressId })
+                    .done(function (response) {
+                        window.location.href = response.redirectUrl;
+                    })
+                    .fail(function (error) {
+                        console.error('Error:', error);
+                        alert('An error occurred while proceeding to payment.');
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>

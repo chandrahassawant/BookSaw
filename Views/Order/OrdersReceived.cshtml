@@ -1,0 +1,164 @@
+@model IEnumerable<BulkyWeb.Models.OrderEntity>
+
+@{
+    ViewData["Title"] = "Orders Received";
+}
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row flex-lg-nowrap">
+        <div class="col">
+            <div class="row flex-lg-nowrap">
+                <div class="col mb-3">
+                    <div class="e-panel card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2>Orders Received</h2>
+                            </div>
+                            <div class="e-table">
+                                <div class="table-responsive table-lg mt-3">
+                                    <table class="table table-bordered">
+                                        <thead class="text-center">
+                                            <tr>
+                                                <th class="text-center align-middle">Order ID</th>
+                                                @* <th class="text-center align-middle">Customer Name</th> *@
+                                                <th class="text-center align-middle">Email</th>
+                                                <th class="text-center align-middle">Order Date</th>
+                                                <th class="text-center align-middle">Total Amount</th>
+                                                <th class="text-center align-middle">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            @foreach (var order in Model)
+                                            {
+                                                <tr id="order-@order.OrderId">
+                                                    <td class="text-center align-middle">@order.OrderId</td>
+                                                    @* <td class="text-center align-middle">@order.CustomerName</td> *@
+                                                    <td class="text-center align-middle">@order.Email</td>
+                                                    <td class="text-center align-middle">
+                                                        <span>@order.OrderDate</span>
+                                                    </td>
+                                                    <td class="text-center align-middle">@order.TotalAmount</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button" style="width: 50px; color: black;"
+                                                                onclick="viewOrderDetails('@order.OrderId')">
+                                                                VIEW
+                                                            </button>
+
+
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button" style="width: 50px; color: black;"
+                                                                onclick="deleteOrder('@order.Id')">
+                                                                <i class="fa fa-trash"></i>
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button" style="width: 90px; color: black;"
+                                                                onclick="markAsShipped('@order.OrderId')">
+                                                                <i class="fa fa-truck"></i> Ship
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-sm btn-outline-secondary badge" type="button"
+                                        onclick="addNewOrder()" style="width: 150px; color: black; margin-top: 10px;">
+                                        <i class="fa fa-plus"></i> Add New Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.min.js"></script>
+    <script
+        src="https://ajax.aspnetcdn.com/ajax/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        function deleteOrder(OrderId) {
+            if (confirm("Are you sure you want to delete this order?")) {
+                $.ajax({
+                    url: '/Order/Delete',
+                    type: 'POST',
+                    data: {
+                        OrderId: OrderId,
+                        __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            location.reload(); // Reload the page to reflect changes
+                        } else {
+                            alert('Error: ' + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert('An error occurred while processing your request.');
+                    }
+                });
+            }
+        }
+
+        function markAsShipped(OrderId) {
+            if (confirm("Are you sure you want to mark this order as shipped?")) {
+                $.ajax({
+                    url: '/Order/Ship', // Endpoint to handle the "Ship" action
+                    type: 'POST',
+                    data: {
+                        OrderId: OrderId,
+                        __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            location.reload();
+                            // Optionally, update the UI to indicate that the order is shipped
+        @* $(`#order-${OrderId}`).addClass('shipped'); // Add a class to style shipped rows *@
+                        } else {
+                            alert('Error: ' + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert('An error occurred while processing your request.');
+                    }
+                });
+            }
+        }
+
+        function viewOrderDetails(orderId) {
+            $.ajax({
+                url: '/order/ShippingDetails', // Endpoint to handle fetching order details
+                type: 'GET',
+                data: {
+                    orderId: orderId
+                },
+                success: function (response) {
+                    if (response.success) {
+                        // Assuming you have a modal or a div to display order details
+                        $('#orderDetailsModal .modal-body').html(response.html);
+                        $('#orderDetailsModal').modal('show');
+                    } else {
+                        alert('Error: ' + response.message);
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while processing your request.');
+                }
+            });
+        }
+
+
+
+
+    </script>
+}

@@ -1,0 +1,140 @@
+﻿@model IEnumerable<BulkyWeb.Models.OrderEntity>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        .product-img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .sortable {
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .sortable:hover {
+            background-color: #f8f9fa;
+        }
+
+        .table th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+
+        .table td {
+            vertical-align: middle;
+        }
+
+        .badge {
+            padding: 0.5em 0.75em;
+            font-weight: 500;
+        }
+
+        .table-hover tbody tr:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s;
+        }
+
+        .bi {
+            font-size: 0.875rem;
+            margin-left: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Order History</h5>
+                <input type="search" class="form-control w-auto" placeholder="Search orders">
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped" aria-label="Order History Table">
+                        <thead class="bg-light">
+                            <tr>
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Ordered Date</th>
+                                @* <th scope="col">Product Details</th> *@
+                                <th scope="col">Expected Delivery</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model)
+                            {
+                                <tr>
+                                    <td>@order.OrderId</td>
+                                    <td>@order.OrderDate</td>
+                                    @* <td>
+                                        <div class="d-flex align-items-center">
+                                        <img src="@order.ProductImageUrl" alt="Product Image" class="product-img me-2">
+                                        <div>
+                                            <strong>@order.ProductName</strong>
+                                            <p class="mb-0 text-muted small">@order.ProductDescription</p>
+                                        </div>
+                                    </div>
+                                    </td> *@
+                                    <td>@order.ExpectedDeliveryDate.</td>
+                                    <td>
+                                        @if (order.DeliveredDate.HasValue)
+                                        {
+                                            <span class="badge bg-success">Delivered</span>
+                                        }
+                                        else if (order.ShippedDate.HasValue)
+                                        {
+                                            <span class="badge bg-warning text-dark">In Transit</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-info">Processing</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div style="display: flex; width: 100%; gap: 10px;">
+                                            <button class="btn btn-sm btn-outline-secondary"
+                                                style="flex: 1; color: black;">View Details</button>
+                                            @if (!order.DeliveredDate.HasValue)
+                                            {
+                                                <button class="btn btn-sm btn-outline-secondary"
+                                                    style="flex: 1; color: black;">Cancel</button>
+                                            }
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

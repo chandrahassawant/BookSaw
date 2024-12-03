@@ -1,0 +1,142 @@
+﻿@model IEnumerable<BulkyWeb.Models.Client>
+
+@{
+    ViewData["Title"] = "Clients List";
+}
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row flex-lg-nowrap">
+        <div class="col">
+            <div class="row flex-lg-nowrap">
+                <div class="col mb-3">
+                    <div class="e-panel card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <!-- Optionally, you can add a card title here -->
+                            </div>
+                            <div class="e-table">
+                                <div class="table-responsive table-lg mt-3">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="sortable" style="text-align: center;">Name</th>
+                                                <th class="sortable" style="text-align: center;">Corporate Identification Number</th>
+                                                <th style="text-align: center;">Corporate Email</th>
+                                                <th style="text-align: center;">Date Registered</th>
+                                               
+                                                <th style="text-align: center;">PhoneNumber</th>
+                                                <th style="text-align: center;">Actions</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            @foreach (var client in Model)
+                                            {
+                                                <tr id="client-@client.Id">
+                                                    <td class="text-nowrap align-middle">@client.PublicationName</td>
+                                                    <td class="text-nowrap align-middle">@client.CorporateIdentificationNumber</td>
+                                                    <td class="text-nowrap align-middle">@client.CorporateEmailId</td>
+                                                    <td class="text-nowrap align-middle">
+                                                        <span>@client.DateRegistered.ToString("dd MMM yyyy")</span>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">@client.PhoneNumber</td>
+                                                    <td class="align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button class="btn btn-sm btn-outline-secondary badge" type="button" data-toggle="modal" data-target="#client-form-modal" style="width: 50px; color: black;">
+                                                                Edit
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge" type="button" style="width: 50px; color: black;" onclick="deleteClient('@client.Id')">
+                                                                <i class="fa fa-trash"></i>
+                                                            </button>
+                                                            @if (!client.IsActive)
+                                                            {
+                                                                <button class="btn btn-sm btn-outline-secondary badge" type="button" style="width: 50px; color: black;" onclick="enableClient('@client.Id')">
+                                                                    <i class="fa fa-check"></i> Enable
+                                                                </button>
+                                                            }
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        function deleteClient(Id) {
+    if (confirm("Are you sure you want to deactivate this client?")) {
+        $.ajax({
+            url: '/Client/Delete',
+            type: 'POST',
+            data: {
+                id: Id,
+                __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val() // Ensure this token is present in the view
+            },
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message);
+                    location.reload(); // Reload the page to reflect changes
+                } else {
+                    alert('Error: ' + response.message);
+                }
+            },
+            error: function () {
+                alert('An error occurred while processing your request.');
+            }
+        });
+    }
+}
+
+
+        function enableClient(clientId) {
+            if (confirm("Are you sure you want to reactivate this client?")) {
+                $.ajax({
+                    url: '/Client/Enable',
+                    type: 'POST',
+                    data: {
+                        id: clientId,
+                        __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            location.reload(); // Reload the page to reflect changes
+                        } else {
+                            alert('Error: ' + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert('An error occurred while processing your request.');
+                    }
+                });
+            }
+        }
+    </script>
+}
+
+<style>
+    .body {
+        margin-top: 10px;
+        background: #f8f8f8;
+    }
+
+    .table td,
+    .table th {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

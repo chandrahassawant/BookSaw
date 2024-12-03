@@ -1,0 +1,64 @@
+@{
+    var orderDetails = ViewBag.OrderDetails as List<BulkyWeb.Models.OrderCheckOut>;
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>User ID</th>
+            <th>Customer Name</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postal Code</th>
+            <th>Country</th>
+            <th>Order Date</th>
+            <th>Shipping Date</th>
+            <th>Cart Total</th>
+            <th>Order Status</th>
+            <th>Payment Status</th>
+            <th>Tracking Number</th>
+            <th>Carrier</th>
+            <th>Payment Date</th>
+            <th>Payment Due Date</th>
+            <th>Payment Intent ID</th>
+            <th>Session ID</th>
+            <th>Transaction ID</th>
+            <th>Order Placed ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(orderDetails != null)
+        {
+            foreach (var item in orderDetails)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.UserId</td>
+                    <td>@item.CustomerName</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.Address</td>
+                    <td>@item.City</td>
+                    <td>@item.State</td>
+                    <td>@item.PostalCode</td>
+                    <td>@item.Country</td>
+                    <td>@item.OrderDate</td>
+                    <td>@item.ShippingDate</td>
+                    <td>@item.CartTotal</td>
+                    <td>@item.OrderStatus</td>
+                    <td>@item.PaymentStatus</td>
+                    <td>@item.TrackingNumber</td>
+                    <td>@item.Carrier</td>
+                    <td>@item.PaymentDate</td>
+                    <td>@item.PaymentDueDate</td>
+                    <td>@item.PaymentIntentId</td>
+                    <td>@item.SessionId</td>
+                    <td>@item.TransactionId</td>
+                    <td>@item.OrderId</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

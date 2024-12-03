@@ -1,0 +1,88 @@
+@model BulkyWeb.Models.CustomerAddress
+
+@{
+    ViewData["Title"] = "Create Customer Address";
+}
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div class="col-xl-6">
+        <!-- Account details card -->
+        <div class="card mb-4">
+            <div class="card-header">Customer Address</div>
+            <div class="card-body">
+                <!-- Display Success/Error Messages -->
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success">@TempData["Success"]</div>
+                }
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger">@TempData["Error"]</div>
+                }
+
+                <!-- Form to create customer address -->
+                @using (Html.BeginForm("Create", "CustomerAddress", FormMethod.Post))
+                {
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(m => m.UserId)
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.CustomerId, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.CustomerId, new { @class = "form-control", @readonly = "readonly" })
+                        @Html.ValidationMessageFor(m => m.CustomerId, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.Name, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.StreetAddress, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.StreetAddress, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.StreetAddress, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.City, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.City, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.State, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.State, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.PostalCode, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.PostalCode, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.PostalCode, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.Country, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.Country, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Country, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.PhoneNumber, new { @class = "small mb-1" })
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Create</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

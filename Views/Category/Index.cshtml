@@ -1,0 +1,68 @@
+﻿@model List<Category>
+
+
+
+<div class="d-flex justify-content-between align-items-center">
+    <h1>Category List</h1>
+    <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-circle-fill"></i> Add New Category
+    </a>
+</div>
+
+<section class="intro">
+    <div class="bg-image h-100" style="background-color: #f5f7fa;">
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <form method="post" asp-action="DeleteSelected">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative; height: 700px">
+                                        <table class="table table-striped mb-0">
+                                            <thead style="background-color: #002d72; color: #fff;">
+                                                <tr>
+                                                    <th><input type="checkbox" id="selectAll" /></th>
+                                                    <th scope="col">Category Name</th>
+                                                    <th scope="col">Display Order</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var obj in Model)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="selectedIds" value="@obj.CategoryId" />
+                                                        </td>
+                                                        <td>@obj.Name</td>
+                                                        <td>@obj.DisplayOrder</td>
+                                                        <td>
+                                                            <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.CategoryId" class="btn btn-warning btn-sm">
+                                                                Edit
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button type="submit" class="btn btn-danger">Delete Selected</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('selectAll').addEventListener('click', function() {
+        const checkboxes = document.querySelectorAll('input[name="selectedIds"]');
+        checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+    });
+</script>

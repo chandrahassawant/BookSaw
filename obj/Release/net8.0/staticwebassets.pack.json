@@ -1,0 +1,953 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\chand\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BulkyWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BulkyWeb.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\animate.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\animate.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\et-icons.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\et-icons.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\lightbox.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\normalize.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\owl.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\owl.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\publisher.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\publisher.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\css\\tooltip.css",
+      "PackagePath": "staticwebassets\\Bukku\\css\\tooltip.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\font-awesome-4.1.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\Bukku\\font-awesome-4.1.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\font-awesome-4.1.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Bukku\\font-awesome-4.1.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Bukku\\font-awesome-4.1.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\Bukku\\fonts\\ElegantIcons.eot"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\Bukku\\fonts\\ElegantIcons.svg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\Bukku\\fonts\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\Bukku\\fonts\\ElegantIcons.woff"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\fonts\\ProximaNova-Bold.otf",
+      "PackagePath": "staticwebassets\\Bukku\\fonts\\ProximaNova-Bold.otf"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\fonts\\ProximaNova-Regular.otf",
+      "PackagePath": "staticwebassets\\Bukku\\fonts\\ProximaNova-Regular.otf"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\author.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\author.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\book1.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\book1.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\book_page.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\book_page.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\close.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\close.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\kindle.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\kindle.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\loading.gif",
+      "PackagePath": "staticwebassets\\Bukku\\img\\loading.gif"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\logo.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\logo.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\next.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\next.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\prev.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\prev.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\reviewers\\1.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\reviewers\\1.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\reviewers\\2.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\reviewers\\2.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\reviewers\\3.png",
+      "PackagePath": "staticwebassets\\Bukku\\img\\reviewers\\3.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\img\\slider1.jpg",
+      "PackagePath": "staticwebassets\\Bukku\\img\\slider1.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\index.html",
+      "PackagePath": "staticwebassets\\Bukku\\index.html"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\core.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\core.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\isotope.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\isotope.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\jquery-1.11.1.min.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\jquery-1.11.1.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\jquery.form-validator.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\jquery.form-validator.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\jquery.onepagenav.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\jquery.onepagenav.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\lightbox.min.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\lightbox.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\main.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\main.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\owl.carousel.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\preloader.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\preloader.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\tooltip.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\validate.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\validate.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\Bukku\\js\\wow.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\php\\newMail.php",
+      "PackagePath": "staticwebassets\\Bukku\\php\\newMail.php"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\Bukku\\php\\sampleMail.php",
+      "PackagePath": "staticwebassets\\Bukku\\php\\sampleMail.php"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\css\\normalize.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\css\\vendor.css",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\css\\vendor.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\Read Me.txt",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\Read Me.txt"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\icomoon.css",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\icomoon.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\selection.json",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\icomoon\\selection.json"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\app-store.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\app-store.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\close.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\close.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\fullscreen-black.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\fullscreen-black.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\fullscreen.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\fullscreen.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\left.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\left.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\loader.gif",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\loader.gif"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\right.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\chocolat\\right.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image1.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image1.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image2.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image2.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image3.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image3.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image4.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image4.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image5.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\client-image5.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\curly-divider.svg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\curly-divider.svg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\default.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\default.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\device.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\device.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\google-play.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\google-play.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item1.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item1.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item3.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item3.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item4.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item4.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item5.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\item5.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\leaf.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\leaf.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\main-banner1.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\main-banner1.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\main-banner2.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\main-banner2.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\main-logo.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\main-logo.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\ns-arrow-right.svg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\ns-arrow-right.svg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\pattern1.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\pattern1.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\pattern2.png",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\pattern2.png"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\post-img1.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\post-img1.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\post-img2.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\post-img2.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\post-img3.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\post-img3.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item1.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item1.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item2.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item2.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item3.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item3.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item4.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item4.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item5.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item5.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item6.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item6.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item7.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item7.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item8.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\product-item8.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\single-image.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\single-image.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item1.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item1.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item2.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item2.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item3.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item3.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item4.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item4.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item5.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item5.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item6.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item6.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item7.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item7.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item8.jpg",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\images\\tab-item8.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\index.html",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\index.html"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\js\\jquery-1.11.0.min.js",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\js\\jquery-1.11.0.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\js\\modernizr.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\js\\plugins.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\js\\script.js",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\js\\script.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\js\\slideNav.js",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\js\\slideNav.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\js\\slideNav.min.js",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\js\\slideNav.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\readme.txt",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\readme.txt"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\booksaw-1.0.0\\booksaw-1.0.0\\style.css",
+      "PackagePath": "staticwebassets\\booksaw-1.0.0\\booksaw-1.0.0\\style.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\css\\categorytablecss.css",
+      "PackagePath": "staticwebassets\\css\\categorytablecss.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\images\\avatars\\22801fac-f52a-4cf8-bfbe-c1b05a7acc36.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\22801fac-f52a-4cf8-bfbe-c1b05a7acc36.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\images\\avatars\\23d78dc8-05e6-48ac-95e3-490f4505e8e7.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\23d78dc8-05e6-48ac-95e3-490f4505e8e7.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\images\\avatars\\240c7776-b7b5-4848-a212-c3892b4b2ce9.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\240c7776-b7b5-4848-a212-c3892b4b2ce9.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\product\\Breaking India Western Interventions\\back.jpg",
+      "PackagePath": "staticwebassets\\product\\Breaking India Western Interventions\\back.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\product\\Breaking India Western Interventions\\front.jpg",
+      "PackagePath": "staticwebassets\\product\\Breaking India Western Interventions\\front.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\product\\Eternal Bharat Truth, Meaning & Beauty\\back.jpg",
+      "PackagePath": "staticwebassets\\product\\Eternal Bharat Truth, Meaning & Beauty\\back.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\product\\Eternal Bharat Truth, Meaning & Beauty\\front.jpg",
+      "PackagePath": "staticwebassets\\product\\Eternal Bharat Truth, Meaning & Beauty\\front.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\product\\Savarkar Echoes from a Forgotten Past\\back.jpg",
+      "PackagePath": "staticwebassets\\product\\Savarkar Echoes from a Forgotten Past\\back.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\product\\Savarkar Echoes from a Forgotten Past\\front.jpg",
+      "PackagePath": "staticwebassets\\product\\Savarkar Echoes from a Forgotten Past\\front.jpg"
+    },
+    {
+      "Id": "E:\\.NET\\BulkyWeb\\wwwroot\\product\\The Idea of India Bhārat as a Civilisation\\front.jpg",
+      "PackagePath": "staticwebassets\\product\\The Idea of India Bhārat as a Civilisation\\front.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.BulkyWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.BulkyWeb.props",
+      "PackagePath": "build\\BulkyWeb.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BulkyWeb.props",
+      "PackagePath": "buildMultiTargeting\\BulkyWeb.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.BulkyWeb.props",
+      "PackagePath": "buildTransitive\\BulkyWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

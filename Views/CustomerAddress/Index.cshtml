@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BulkyWeb.Models.CustomerAddress>
+
+@{
+    ViewData["Title"] = "Customer Addresses";
+}
+
+<a asp-action="Create" class="btn btn-primary mb-3">Add New Address</a>
+
+<table class="table table-bordered table-hover table-responsive mt-3" style="width: 100%;">
+    <thead class="thead-dark">
+        <tr>
+            <!-- <th>Customer Id</th> -->
+            <th>Customer Name</th>
+            <th>Phone Number</th>
+            <th>Street Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postal Code</th>
+            <th>Country</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <!-- <td>@item.CustomerId</td> -->
+                <td>@item.Name</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.StreetAddress</td>
+                <td>@item.City</td>
+                <td>@item.State</td>
+                <td>@item.PostalCode</td>
+                <td>@item.Country</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                    <a asp-action="DeleteCustomerAddress" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .table-bordered {
+        border: 2px solid #dee2e6; /* Increase border width */
+    }
+    .table {
+        width: 100%; /* Ensure the table takes up the full width */
+    }
+</style>

@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/efb2e5e1-6102-4a4b-8d30-ccb99ddf6f3e/resourceGroups/booksaw_group/providers/Microsoft.Web/sites/booksaw"
+}

@@ -1,0 +1,117 @@
+@model BulkyWeb.Models.User
+
+<div class="container-xl px-4 mt-4">
+    <hr class="mt-0 mb-4">
+    <div class="row">
+        <div class="col-xl-4">
+            <!-- Profile picture card -->
+            <div class="card mb-4 mb-xl-0">
+                <div class="card-header">Profile Picture</div>
+                <div class="card-body text-center">
+                    <!-- Display current avatar -->
+                    <img class="img-account-profile rounded-circle mb-2" 
+                         src="@(!string.IsNullOrEmpty(Model.Avatar) ? Model.Avatar : "/images/default-avatar.png")" 
+                         alt="Profile Picture" style="width: 150px; height: 150px; object-fit: cover;">
+                    
+                    <!-- Avatar Upload Form -->
+                    <form asp-action="UploadAvatar" asp-controller="User" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <input class="form-control" type="file" name="avatarFile" accept=".jpg,.jpeg,.png">
+                            <small class="text-muted">JPG or PNG no larger than 5 MB.</small>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Upload new image</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-8">
+            <!-- Account details card -->
+            <div class="card mb-4">
+                <div class="card-header">Account Details</div>
+                <div class="card-body">
+                    <!-- Display Success/Error Messages -->
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["Success"]</div>
+                    }
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger">@TempData["Error"]</div>
+                    }
+
+                    <!-- Account details form -->
+                    @using (Html.BeginForm("SaveChanges", "User", FormMethod.Post))
+                    {
+                        @* @Html.AntiForgeryToken() *@
+
+                        <!-- Validation summary -->
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.FirstName, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.LastName, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Email, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.ContactNumber, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.ContactNumber, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.ContactNumber, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Address, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.City, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.City, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.State, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.State, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Country, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.Country, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Country, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.PostalCode, new { @class = "small mb-1" })
+                            @Html.TextBoxFor(m => m.PostalCode, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.PostalCode, "", new { @class = "text-danger" })
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Save changes</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}
